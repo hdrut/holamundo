@@ -58,6 +58,7 @@ pipeline{
             }
             steps{
                 sh '''
+                    docker rm holamundo
                     docker run --name holamundo -p 8080:80 holamundo
                 '''
 
